@@ -20,6 +20,8 @@ class FormaGeometrica(ABC):
         print("Cel mai probabil am colturi.")
 
 
+print(40 * "*")
+
 '''
 INHERITANCE
 Clasa Pătrat - moștenește FormaGeometrica
@@ -32,12 +34,15 @@ class Patrat(FormaGeometrica):
         self.latura = latura
 
 
+print(40 * "*")
+
 '''
 ENCAPSULATION
 latura este proprietate privată
 Implementează getter, setter, deleter pentru latură
 Implementează metoda cerută de interfață (opțional, doar dacă ai ales să
 implementezi metoda abstractă aria)
+
 Clasa Cerc - moștenește FormaGeometrica
 constructor pentru rază
 raza este proprietate privată
@@ -50,7 +55,8 @@ abstractă aria)
 
 class Patrat(FormaGeometrica):
     def __init__(self, latura):
-        self.latura = latura
+        self.__latura = latura
+        print(f'In initul clasei patrat, pi = {self.PI}')
 
     @property
     def latura(self):
@@ -77,6 +83,9 @@ class Cerc(FormaGeometrica):
     def __init__(self, raza):
         self.__raza = raza
 
+    def aria(self):
+        return self.PI * (self.__raza ** 2)
+
     @property
     def raza(self):
         print("Setting as property")
@@ -98,16 +107,18 @@ class Cerc(FormaGeometrica):
         self.__raza = None
 
 
+def descrie():
+    print("Eu nu am colturi.")
+
+
+print(40 * "*")
+
 '''
 POLYMORPHISM
 Definește o nouă metodă descrie - printează ‘Eu nu am colturi’
 Creează un obiect de tip Pătrat și joacă-te cu metodele lui
 Creează un obiect de tip Cerc și joacă-te cu metodele lui
 '''
-
-
-def descrie():
-    print("Eu nu am colturi.")
 
 
 class Patrat(FormaGeometrica):
@@ -121,18 +132,17 @@ class Patrat(FormaGeometrica):
         return 4 * self.latura
 
 
-p = Patrat(5)
+p = Patrat(7)
 
 
-def print_patrat_info(Patrat):
+def print_patrat_info(p):
     print("Aria patratului este:", p.aria())
     print("Perimetrul patratutlui este:", p.perimetru())
 
 
-print_patrat_info(Patrat)
+print_patrat_info(p)
 
 import math
-
 
 
 class Cerc(FormaGeometrica):
@@ -148,9 +158,14 @@ class Cerc(FormaGeometrica):
 
 c = Cerc(5)
 
-def print_cerc_info(Cerc):
+
+def print_cerc_info(c):  # apelam c obiectul, atributul trebuie cu litera mica
     print("Aria cercului este:", c.aria())
     print("Perimetrul cercului este:", c.perimetru())
 
+def descriere_interfata(obj):
+    obj.descriere()
 
-print_cerc_info(Cerc)
+print_cerc_info(c)
+
+print(40 * "*")
