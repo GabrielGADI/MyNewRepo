@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-@dataclass # decorator - nou mod  de clase
+@dataclass # decorator
 class Product:
     name: str
     price: int

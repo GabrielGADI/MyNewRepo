@@ -1,4 +1,5 @@
 from Sesiunea8.testing_examples.app.product import Product
+
 class Product_Repository:
     products = [
         Product(name="Orez", price=4.5, discount=10, category="Alimente de baza"),

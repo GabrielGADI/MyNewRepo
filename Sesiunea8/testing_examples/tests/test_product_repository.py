@@ -1,3 +1,4 @@
+# testare product_repository
 from Sesiunea8.testing_examples.app.product import Product
 from Sesiunea8.testing_examples.app.product_repository import ProductRepository
 import unittest

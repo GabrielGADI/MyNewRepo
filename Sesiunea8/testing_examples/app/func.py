@@ -1,8 +1,8 @@
 '''
 Sa se scrie o functie care primeste ca parametru un intreg si returneaza:
- *35 daca numarul este divizibil cu 3 si 5
- *3 daca numarul este divizibil cu 3
- *5 daca numarul este divizibil cu 5
+ - *35 daca numarul este divizibil cu 3 si 5
+ - *3 daca numarul este divizibil cu 3
+ - *5 daca numarul este divizibil cu 5
 '''
 def is_div_3_5(n):
     if n % 3 == 0 and n % 5 == 0:

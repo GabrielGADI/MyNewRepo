@@ -1,5 +1,5 @@
 from Sesiunea8.testing_examples.app.func import is_div_3_5
-import pytest  # package instal
+import pytest  # package ce trebuie instalat
 
 
 def test_is_div_3_5_example():

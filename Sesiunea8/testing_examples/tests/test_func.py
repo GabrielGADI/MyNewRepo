@@ -3,7 +3,7 @@ import unittest
 from parameterized import parameterized
 
 
-class TestFunc(unittest.TestCase): # pentru a testa trebuie sa creeam o clasa intotdeauna
+class TestFunc(unittest.TestCase): # pentru a testa trebuie intotdeauna sa creeam o clasa
     def test_is_div_3_5_35(self):
         self.assertEqual(35, is_div_3_5(15))  # ruleaza test cu return ok
 
@@ -16,7 +16,7 @@ class TestFunc(unittest.TestCase): # pentru a testa trebuie sa creeam o clasa in
     def test_is_div_3_5_not_div(self):
         self.assertEqual(None, is_div_3_5(4))
 
-    @parameterized.expand([
+    @parameterized.expand([ # o singura functie pentru toate instantele
         (15, 35),
         (9, 3),
         (25, 5),
