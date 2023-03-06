@@ -1,6 +1,5 @@
 '''
 3 tipuri de metode si atribute:
-
 - public -> accesibile peste tot
 - protected -> accesibile doar in ierarhia de mostenire (_atribut)
 - private -> accesibile doar in clasa (__atribut)

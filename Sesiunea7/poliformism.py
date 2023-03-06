@@ -5,7 +5,6 @@ In esenta polimorfismul permite obiectelor de acelasi tip sa aiba comportamente 
 fara a fi necesar sa se stie tipul lor exact inainte de executie.
 '''
 
-
 from abc import ABC, abstractmethod
 from pprint import pprint # pretty print
 

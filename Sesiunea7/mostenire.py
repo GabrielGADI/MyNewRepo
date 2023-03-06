@@ -1,7 +1,8 @@
-# mostenirea - luarea tuturor atributelor si functiilor din clasa care mosteneste
-# mostenirea ne ajuta sa nu mai scriem cod duplicat daca vrem sa avem obiecte care fac acelasi lucru
-# mostenirea - relatie de tip "is"
-
+'''
+ mostenirea - luarea tuturor atributelor si functiilor din clasa care mosteneste
+ mostenirea ne ajuta sa nu mai scriem cod duplicat daca vrem sa avem obiecte care fac acelasi lucru
+ mostenirea - relatie de tip "is"
+'''
 class Person:
     def __init__(self, age, name):
         self.age = age

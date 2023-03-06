@@ -1,4 +1,3 @@
-
 class Car:
     def go(self):
         print("vroom vroom")
