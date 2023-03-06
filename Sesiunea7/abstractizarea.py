@@ -9,7 +9,7 @@ from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
-    @abstractmethod # functie ca decorator
+    @abstractmethod # functie abstract ca decorator
     def sound(self): # functie fara corp
         pass
 
