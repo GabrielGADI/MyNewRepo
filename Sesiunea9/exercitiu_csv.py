@@ -1,5 +1,5 @@
 '''
-sa se scrie o functie care citeste din fisierul persons.csv si adauga la datele din acel fisier o line de date
+sa se scrie o functie care citeste din fisierul persons.csv si adauga la datele din acel fisier o linie de date
 primite ca parametru.Rezultatul final va fi scris in fisierul allpersons.csv
 Constrangeri:
     - va trebui sa se foloseasca clase pentru manipularea datelor

@@ -1,0 +1,20 @@
+[
+    {
+        "Tara": "Romania",
+        "Populatie": "21000000",
+        "Salariu minim": "1800",
+        "Varsta de pensionare": "67"
+    },
+    {
+        "Tara": "Argentina",
+        "Populatie": "62000000",
+        "Salariu": "2100",
+        "Varsta de pensionare": "65"
+    },
+    {
+        "Tara": "Franta",
+        "Populatie": "57000000",
+        "Salariu": "2800",
+        "Varsta de pensionare": "64"
+    }
+]
