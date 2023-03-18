@@ -1,0 +1,38 @@
+[
+    {
+        "Tara": "Romania",
+        "Populatie": "21000000",
+        "Salariu minim": "1800",
+        "Varsta de pensionare": "67"
+    },
+    {
+        "Tara": "Argentina",
+        "Populatie": "62000000",
+        "Salariu": "2100",
+        "Varsta de pensionare": "65"
+    },
+    {
+        "Tara": "Franta",
+        "Populatie": "57000000",
+        "Salariu": "2800",
+        "Varsta de pensionare": "64"
+    },
+    {
+        "Tara": "U.K.",
+        "Populatie": "71000000",
+        "Salariu": "2400",
+        "Varsta de pensionare": "63"
+    },
+    {
+        "Tara": "Germania",
+        "Populatie": "48000000",
+        "Salariu": "2200",
+        "Varsta de pensionare": "64"
+    },
+    {
+        "Tara": "Turcia",
+        "Populatie": "54000000",
+        "Salariu": "2340",
+        "Varsta de pensionare": "64"
+    }
+]
