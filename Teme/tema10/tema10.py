@@ -25,9 +25,9 @@ def measure_time(unit="s"):
 def real_time():
     print("This is elapsed!")
 
+
 real_time
 print(real_time)
-
 
 '''
 2. Sa se genereze primele 100 de numere prime folosind liste, si apoi folosind generator. 
@@ -64,11 +64,14 @@ def get_primes_list(n):
 def get_primes_generator(n):
     count = 0
     for num in range(2, n + 1):
-        is_prime = True
-        for i in range(2, int(num ** 0.5) + 1):
-            if num % i == 0:
-                is_prime = False
-                break
+        def is_prime(n):
+            if n <= 1:
+                return False
+            for i in range(2, int(n ** 0.5) + 1):
+                if n % i == 0:
+                    return False
+            return True
+
         if is_prime:
             count += 1
             if count <= 100:
@@ -90,7 +93,6 @@ generator_time = timeit.timeit(lambda: list(get_primes_generator(n)), number=1)
 
 print(f"Time taken to generate the first 100 primes using lists: {list_time:.6f} seconds")
 print(f"Time taken to generate the first 100 primes using a generator: {generator_time:.6f} seconds")
-
 
 '''
 3.Scrieti un decorator care primeste ca argument numele unui fisier si pentru orice functie apelata,
