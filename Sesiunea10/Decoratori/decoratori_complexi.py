@@ -5,7 +5,7 @@ def repeat(n):
     def decorator_repeat(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
-            for i in range(n):
+            for _ in range(n):
                 value = func(*args, **kwargs)
             return value
 

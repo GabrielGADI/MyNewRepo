@@ -2,12 +2,15 @@
 1.Sa se implementeze un decorator care masoara timpul necesar executiei unei functii.
 
 '''
+import functools
 import timeit
 import time
 
 
+
 def measure_time(unit="s"):
     def decorator_measure_time(func):
+        @functools.wraps(func)
         def wrapper(*args, **kwargs):
             start_time = time.time()
             result = func(*args, **kwargs)
@@ -21,13 +24,16 @@ def measure_time(unit="s"):
     return decorator_measure_time
 
 
-@measure_time
+@measure_time(unit="s")
 def real_time():
     print("This is elapsed!")
 
 
-real_time
-print(real_time)
+real_time()
+
+print(real_time())
+
+
 
 '''
 2. Sa se genereze primele 100 de numere prime folosind liste, si apoi folosind generator. 
