@@ -1,5 +1,5 @@
 # yield
-# folosit in cadrul unei functii
+#iterabil folosit in cadrul unei functii
 def func():
     print("before yield")
     yield 10 # revine in functie si continua sa gaseasca urmatorul( deschide si inchide)

@@ -1,4 +1,4 @@
-# folosit in cadrul unei clase
+# iterabil folosit in cadrul unei clase
 # trebuiesc implementate 2 functii iter si next
 class EvenIterator:
     def __init__(self, n):
