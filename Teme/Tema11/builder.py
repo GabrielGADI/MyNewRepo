@@ -80,3 +80,13 @@ product = builder.get_product()
 print(product.part_a)
 print(product.part_b)
 print(product.part_c)
+
+'''
+d. (Optionala) O descriere a unde ar putea fi folosit in viata reala (nu neaparat exemplu legat de IT)
+
+  Atunci cand Lamborghini a vrut sa faca un prototip a facut o schita la cum ar vrea sa arate masina, dupa aceea a ales 
+materialele care vor fi folosite pentru realizarea acestuia. A creat scheletul masinii cu echipa de oameni, dupa aceea a
+creat motorul, caruia i-au facut spatiu suficient sa incape in fata, i-au modificat ambreiajul pentru o eficienta sporita.
+Si astfel a ajuns sa fie un adversar de temut impotriva lui Ferrari.
+  Creearea unei masini de la zero poate fi considerat un Builder. 
+'''

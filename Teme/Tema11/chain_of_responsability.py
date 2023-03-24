@@ -76,3 +76,14 @@ if __name__ == '__main__':
     print(handler1.handle('request 2'))
     print(handler1.handle('request 3'))
     print(handler1.handle('unknown request'))
+
+'''
+d. (Optionala) O descriere a unde ar putea fi folosit in viata reala (nu neaparat exemplu legat de IT)
+
+   Un complex hotelier care se ocupa cu rezervari: telefonic sau online si care pun la dispozitie clientilor, 
+conform cerintelor acestora, servicii diverse. Este o implicare in lant incepand de la cameriste, receptioneri, 
+entertaineri, bucatari, ajutor bucatari, ospatari, picoli, paza si bineinteles Managerul hotelului. Toti poarta 
+o responsabilitate care este strans legata unul fata de celalalt care in cele din urma va fi rasplatita cu un
+feedback din partea clientului la finalul sejurului acestuia.
+   Un complex hotelier poate fi considerat un Chain Of Responsability.
+'''

@@ -24,7 +24,6 @@ c. Exemplu cod (template, nu neaparat exemplu din viata reala)
 '''
 
 
-
 class Abstraction:
     def __init__(self, implementation):
         self.implementation = implementation
@@ -57,3 +56,14 @@ abstraction_a.operation()
 abstraction_b = Abstraction(implementation_b)
 abstraction_b.operation()
 
+'''
+
+d. (Optionala) O descriere a unde ar putea fi folosit in viata reala (nu neaparat exemplu legat de IT)
+
+  Se poate folosi intr-o fabrica de productie masini, creeandu-se un model de masina care implica toate procesele 
+de productie si pe de alta parte logistica pentru achizitionarea de materiale, comunicare eficienta cu 
+furnizorii si termene limita de livrare si tot ce implica furnizarea de materiale necesare pentru productie si 
+vanzarea produsului(model - masina).
+   Fabrica de productie de masini poate fi considerat Bridge
+   
+'''
