@@ -33,6 +33,13 @@ in clientul ARC alegem metoda GET pentru a trimite toate datele din users.csv, s
 Address url:http://127.0.0.1:5001/users/Andrei
 '''
 
+@app.route("/user/<name>", methods=["PATCH"])
+def update_user_age(name):
+    user = user_repo
+    if user["name"] == name:
+            user["age"] = request.json["age"]
+            return jsonify(user)
+    return jsonify({"message": "User not found"})
 
 @app.route("/users", methods=["POST"])
 def add_user():
