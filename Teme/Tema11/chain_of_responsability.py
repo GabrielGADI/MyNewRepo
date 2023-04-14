@@ -80,10 +80,15 @@ if __name__ == '__main__':
 '''
 d. (Optionala) O descriere a unde ar putea fi folosit in viata reala (nu neaparat exemplu legat de IT)
 
-   Un complex hotelier care se ocupa cu rezervari: telefonic sau online si care pun la dispozitie clientilor, 
-conform cerintelor acestora, servicii diverse. Este o implicare in lant incepand de la cameriste, receptioneri, 
-entertaineri, bucatari, ajutor bucatari, ospatari, picoli, paza si bineinteles Managerul hotelului. Toti poarta 
-o responsabilitate care este strans legata unul fata de celalalt care in cele din urma va fi rasplatita cu un
-feedback din partea clientului la finalul sejurului acestuia.
+   Un complex hotelier care se ocupa cu rezervari: telefonic sau online si care pune la dispozitie clientilor, 
+conform cerintelor acestora, servicii diverse. Este o implicare in lant incepand de la cameriste - care se ocupa cu
+aranjarea camerelor -  coordonate de o sefa de tura care este in stransa legatura cu receptionerii; receptionerii - 
+supervizati de sef de tura care este in subordinea managerului de departament; entertainerii - coordonati de 
+receptioneri care le aduc la cunostinta orele cand trebuie sa creeze atmosfera de voie buna; bucatarii, ajutorii de 
+bucatari - coordonati de seful bucatar; ospatarii si picolii - coordonati de seful de tura la indrumarea managerului 
+restaurant care este in stransa legatura cu seful bucatar, paza - asigura siguranta clientilor, si bineinteles Managerul
+hotelului care coordoneaza intreaga activitate.
+   Toti poarta o responsabilitate care este strans legata unul fata de celalalt si care in cele din urma va fi rasplatita 
+cu un feedback din partea clientului la finalul sejurului acestuia.
    Un complex hotelier poate fi considerat un Chain Of Responsability.
 '''
