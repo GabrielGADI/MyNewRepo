@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clienti</title>
+</head>
+<body>
+{% if client %}
+    <ul>
+        {% for client in clienti %}
+        <li>
+            <a href="{% url 'clienti:client_detail' client.id %}"> {{ client }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>
