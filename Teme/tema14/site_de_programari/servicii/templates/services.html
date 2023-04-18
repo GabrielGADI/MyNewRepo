@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Servicii</title>
+    <title>Services</title>
 </head>
 <body>
-{% if serviciu %}
+{% if service %}
     <ul>
-        {% for serviciu in servicii %}
+        {% for service in services %}
         <li>
-            <a href="{% url 'servicii:serviciu_detail' serviciu.id %}"> {{ serviciu }}</a>
+            <a href="{% url 'services:service_detail' service.id %}"> {{ service }}</a>
         </li>
         {% endfor %}
     </ul>

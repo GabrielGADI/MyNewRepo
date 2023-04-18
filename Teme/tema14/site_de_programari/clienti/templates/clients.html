@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Clienti</title>
+    <title>Clients</title>
 </head>
 <body>
 {% if client %}
     <ul>
-        {% for client in clienti %}
+        {% for client in clients %}
         <li>
-            <a href="{% url 'clienti:client_detail' client.id %}"> {{ client }}</a>
+            <a href="{% url 'clients:client_detail' client.id %}"> {{ client }}</a>
         </li>
         {% endfor %}
     </ul>

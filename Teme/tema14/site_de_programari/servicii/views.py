@@ -8,10 +8,10 @@ def index(request):
     return HttpResponse("Aici vor fi serviciile")
 
 
-def servicii(request):
-    servicii_list = Service.objects.all()
-    return render(request, "servicii.html", {"servicii": servicii_list})
+def services(request):
+    services_list = Service.objects.all()
+    return render(request, "services.html", {"services": services_list})
 
-def serviciu_detaliu(request, service_id):
-    service = get_object_or_404(Service, pk=service_id)  # pk=primary key - cheia dupa care sa ne caute
-    return render(request, "serviciu_detaliu.html", {"serviciu": service})
+def service_detaliu(request, service_id):
+    service = get_object_or_404(Service, pk=service_id)
+    return render(request, "service_detail.html", {"service": service})

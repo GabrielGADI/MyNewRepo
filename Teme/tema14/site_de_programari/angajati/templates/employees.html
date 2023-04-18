@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+</head>
+<body>
+{% if employee %}
+    <ul>
+        {% for employee in employees %}
+        <li>
+            <a href="{% url 'employees:employee_detail' angajat.id %}"> {{ employee }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>
