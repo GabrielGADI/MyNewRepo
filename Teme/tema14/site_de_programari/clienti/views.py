@@ -12,6 +12,7 @@ def clients(request):
     clients_list = Client.objects.all()
     return render(request, "clients.html", {"clients": clients_list})
 
+
 def client_details(request, client_id):
     client = get_object_or_404(Client, pk=client_id)
     return render(request, "client_detail.html", {"client": client})

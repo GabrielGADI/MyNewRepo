@@ -12,7 +12,7 @@ def appointments(request):
     appointments_list = Appointment.objects.all()
     return render(request, "appointment.html", {"appointments": appointments_list})
 
+
 def appointment_details(request, appointment_id):
     appointment = get_object_or_404(Appointment, pk=appointment_id)
     return render(request, "appointment_detail.html", {"appointment": appointment})
-

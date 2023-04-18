@@ -5,12 +5,13 @@ from .models import Service
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Aici vor fi serviciile")
+    return HttpResponse("Aici vor fi serviciile!")
 
 
 def services(request):
     services_list = Service.objects.all()
     return render(request, "services.html", {"services": services_list})
+
 
 def service_detaliu(request, service_id):
     service = get_object_or_404(Service, pk=service_id)

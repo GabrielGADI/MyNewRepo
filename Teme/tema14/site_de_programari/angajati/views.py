@@ -12,6 +12,7 @@ def employees(request):
     employees_list = Employee.objects.all()
     return render(request, "employees.html", {"employees": employees_list})
 
+
 def employee_details(request, employee_id):
     employee = get_object_or_404(Employee, pk=employee_id)
     return render(request, "employee_detail.html", {"employee": employee})
