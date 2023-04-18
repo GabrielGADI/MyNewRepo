@@ -5,7 +5,7 @@ from .models import Client
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello  World")
+    return HttpResponse("Aici vor fi clientii!")
 
 
 def clienti(request):

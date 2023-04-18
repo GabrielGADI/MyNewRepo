@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'angajati.apps.AngajatiConfig',
-    'clienti.apps.ClientiConfig',
+    'clienti.apps.ProgramariConfig',
     'programari.apps.ProgramariConfig',
     'servicii.apps.ServiciiConfig',
     'django.contrib.admin',

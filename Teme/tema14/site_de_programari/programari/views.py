@@ -5,7 +5,7 @@ from .models import Appointment
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello  World")
+    return HttpResponse("Aici vor fi programarile active")
 
 
 def programari(request):
