@@ -8,9 +8,9 @@ def index(request):
     return HttpResponse("Aici vor fi programarile active")
 
 
-def programari(request):
-    programari_list = Appointment.objects.all()
-    return render(request, "appointment.html", {"programari": programari_list})
+def appointments(request):
+    appointments_list = Appointment.objects.all()
+    return render(request, "appointment.html", {"appointments": appointments_list})
 
 def appointment_details(request, appointment_id):
     appointment = get_object_or_404(Appointment, pk=appointment_id)

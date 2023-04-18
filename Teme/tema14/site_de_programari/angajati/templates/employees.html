@@ -9,7 +9,7 @@
     <ul>
         {% for employee in employees %}
         <li>
-            <a href="{% url 'employees:employee_detail' angajat.id %}"> {{ employee }}</a>
+            <a href="{% url 'employees:employee_detail' employee.id %}"> {{ employee }}</a>
         </li>
         {% endfor %}
     </ul>
