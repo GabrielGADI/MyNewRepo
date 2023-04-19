@@ -1,4 +1,4 @@
-from Teme.tema_sesiunea7 import FormaGeometrica, Patrat, Cerc
+from private_folder import Patrat, Cerc
 import unittest
 from math import pi
 

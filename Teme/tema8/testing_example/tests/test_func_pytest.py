@@ -2,9 +2,8 @@
 Alegeti una din temele de mai sus, si convertiti testele din unittest in pytest.
 R: test_func_pytest
 '''
-from Teme.tema_sesiunea7 import FormaGeometrica, Patrat, Cerc
+from Teme.tema8.testing_example.app.func import FormaGeometrica, Patrat, Cerc
 from math import pi
-import pytest
 
 
 def test_patrat_aria():

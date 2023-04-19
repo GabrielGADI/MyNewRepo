@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointments</title>
+</head>
+<body>
+{% if appointment %}
+    <ul>
+        {% for appointment in appointments %}
+        <li>
+            <a href="{% url 'appointments:appointment_detail' appointment.id %}"> {{ appointment }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+</head>
+<body>
+{% if service %}
+    <ul>
+        {% for service in services %}
+        <li>
+            <a href="{% url 'services:service_detail' service.id %}"> {{ service }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>
