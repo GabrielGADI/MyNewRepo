@@ -41,6 +41,7 @@ print(50 * "*")
 # update
 user = session.query(User).filter_by(name="Andrei").first()
 user.age = 20
+user.name = "George"
 session.commit()
 users = session.query(User).all()
 for user in users:
