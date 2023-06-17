@@ -22,6 +22,7 @@ c) Sa se creeze o functie care adauga un nou student in lista de studenti
 
 '''
 
+
 # 1.
 class Student:
     def __init__(self, name, university, year):
@@ -29,7 +30,7 @@ class Student:
         self.university = university
         self.year = year
 
-# 2.
+    # 2.
     def __str__(self):
         return f"name = {self.name} universiy = {self.university} year = {self.year}"
 
@@ -53,14 +54,14 @@ class StudentsDB:
         Student(name="Derek", university="Columbia", year=4)
     ]
 
-# 3. b)
+    # 3. b)
     def check_enrolled_student(self, name):
         for student in self.students:
             if name == student.name and student.university:
                 return True
         return False
 
-# 3. c)
+    # 3. c)
     def add_student(self, student):
         self.students.append(student)
 

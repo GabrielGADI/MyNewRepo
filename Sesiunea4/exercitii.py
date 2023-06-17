@@ -14,7 +14,7 @@
 dct = {}
 txt = input("Introdu un text: ")
 for char in txt:
-    if not char.isalpha(): # distinge string de int
+    if not char.isalpha():  # distinge string de int
         continue
     char_type = "vocala" if char in "a,e,i,o,u" else "consoana"
     dct[char] = char_type
@@ -23,7 +23,7 @@ print(dct)
 # 3. sa se scrie un program care citeste  de la tastatura 6 numere si apoi le afiseaza
 # pe cele mai mari  decat 9
 numbers = []
-for _ in range(6) :
+for _ in range(6):
     x = int(input("Introdu un numar: "))
     if x > 9:
         numbers.append(x)
@@ -35,7 +35,7 @@ print(numbers)
 litera = set()
 while True:
     caracter = input("Introdu un caracter: ")
-    if not caracter.isalpha() :
+    if not caracter.isalpha():
         break
     litera.add(caracter)
 lst_litera = list(litera)

@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>Pets</title>
 </head>
 <body>
 {% if pets %}
+<h2>
+    Pets up for adoption
+
+</h2>
+<div class ="pets-list">
     <ul>
+
         {% for pet in pets %}
         <li>
            <a href="{% url 'pets:pet_details' pet.id %}"> {{ pet }}</a>
         </li>
         {% endfor %}
     </ul>
+    </div>
+{% include "form.html" %}
 {% endif %}
 </body>
 </html>

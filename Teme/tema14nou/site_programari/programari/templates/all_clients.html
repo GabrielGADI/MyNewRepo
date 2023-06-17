@@ -6,6 +6,11 @@
 </head>
 <body>
 {% if client %}
+<h2>
+    All Clients
+
+</h2>
+<div class ="all_clients-list">
     <ul>
         {% for client in clients %}
         <li>
@@ -13,6 +18,8 @@
         </li>
         {% endfor %}
     </ul>
+    </div>
+{% include "form.html" %}
 {% endif %}
 </body>
 </html>

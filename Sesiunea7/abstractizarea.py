@@ -4,21 +4,20 @@ O metoda abstracta este o metoda fara corp (implementare)
 abc - abstract base class
 '''
 
-
 from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
-    @abstractmethod # functie abstract ca decorator
-    def sound(self): # functie fara corp
+    @abstractmethod  # functie abstract ca decorator
+    def sound(self):  # functie fara corp
         pass
 
     @abstractmethod
-    def sleep(self): # functie fara corp specificand @abstractmethod
+    def sleep(self):  # functie fara corp specificand @abstractmethod
         raise NotImplementedError
 
 
-class Dog(Animal): # ca o clasa sa fie clasa concret, trebuie sa implementeze toate functiile din clasa abstracta
+class Dog(Animal):  # ca o clasa sa fie clasa concret, trebuie sa implementeze toate functiile din clasa abstracta
     def sound(self):
         print("Woof")
 

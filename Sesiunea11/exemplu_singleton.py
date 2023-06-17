@@ -3,6 +3,7 @@
 # nu creeaza obiecte noi si doar 1 pentru toata clasa
 class SingletonLogger:
     _instance = None
+
     def __new__(cls, *args, **kwargs):
         if cls._instance is None:
             print("Creating object")
@@ -25,4 +26,3 @@ Dezavantaje:
     - poate masca design prost de ex: atunci cand componenetele unui program stiu prea multe intre ele
     - nu este abstractizare
 '''
-

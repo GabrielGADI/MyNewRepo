@@ -3,6 +3,8 @@
  mostenirea ne ajuta sa nu mai scriem cod duplicat daca vrem sa avem obiecte care fac acelasi lucru
  mostenirea - relatie de tip "is"
 '''
+
+
 class Person:
     def __init__(self, age, name):
         self.age = age
@@ -12,14 +14,14 @@ class Person:
         print(f"My name is {self.name}")
 
 
-class Student(Person): # Student mosteneste tot ce este in clasa Person
+class Student(Person):  # Student mosteneste tot ce este in clasa Person
     pass
 
 
-class Worker(Person): # Worker mosteneste tot ce este in clasa Person
-    def __init__(self, age, name, job): # suprascriere constructor pentru adaugare noi atribute
+class Worker(Person):  # Worker mosteneste tot ce este in clasa Person
+    def __init__(self, age, name, job):  # suprascriere constructor pentru adaugare noi atribute
         # Person.__init__(self, age, name) # apelarea constructorului clasei parinte (person)
-        super().__init__(age, name) # o alta metoda de apelare a constructorului clasei parinte (Person)
+        super().__init__(age, name)  # o alta metoda de apelare a constructorului clasei parinte (Person)
         self.job = job
 
 

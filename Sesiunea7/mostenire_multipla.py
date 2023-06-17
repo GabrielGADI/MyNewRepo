@@ -14,7 +14,7 @@ class Flyable:
         print("starting flyable")
 
 
-class FlyingCar(Car, Flyable): # mostenire multipla
+class FlyingCar(Car, Flyable):  # mostenire multipla
     pass
 
 
@@ -22,6 +22,8 @@ fc = FlyingCar()
 fc.fly()
 fc.go()
 fc.start()  # MRO - method resolution order -> se decide care functie din clasa Car sau Flyable se va apela,
+
+
 # luand de la stanga la dreapta
 
 

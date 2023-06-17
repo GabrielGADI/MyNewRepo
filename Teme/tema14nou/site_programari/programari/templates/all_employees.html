@@ -6,6 +6,11 @@
 </head>
 <body>
 {% if employee %}
+<h2>
+    All Employees
+
+</h2>
+<div class ="all_employees-list">
     <ul>
         {% for employee in employees %}
         <li>
@@ -13,6 +18,8 @@
         </li>
         {% endfor %}
     </ul>
+    </div>
+{% include "form.html" %}
 {% endif %}
 </body>
 </html>

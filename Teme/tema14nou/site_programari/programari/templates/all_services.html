@@ -6,6 +6,11 @@
 </head>
 <body>
 {% if service %}
+<h2>
+    All Services
+
+</h2>
+<div class ="all_services-list">
     <ul>
         {% for service in services %}
         <li>
@@ -13,6 +18,8 @@
         </li>
         {% endfor %}
     </ul>
+    </div>
+{% include "form.html" %}
 {% endif %}
 </body>
 </html>

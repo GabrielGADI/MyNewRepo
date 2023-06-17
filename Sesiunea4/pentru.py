@@ -71,5 +71,5 @@ for x in [1, 2, 3]:
     ...  # echivalent pentru pass
 
 print(20 * "-", "enumerate", 20 * "-")
-for index, elem in enumerate(fruits) : #iterare in acelasi timp prin index si element
-    print(index,elem)
+for index, elem in enumerate(fruits):  # iterare in acelasi timp prin index si element
+    print(index, elem)

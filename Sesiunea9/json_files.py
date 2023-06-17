@@ -3,6 +3,7 @@
 import json
 from pprint import pprint
 
+
 def read(filename):
     with open(filename, "r") as f:
         return json.load(f)
@@ -20,7 +21,7 @@ data2 = [
 
 def write(filename, data):
     with open(filename, "w") as f:
-        json.dump(data, f, indent=4) # adaugand parametru indent=4 pentru identare 4 spatii
+        json.dump(data, f, indent=4)  # adaugand parametru indent=4 pentru identare 4 spatii
 
 
-write("employees2.json", data2) # se creeaza fisier json
+write("employees2.json", data2)  # se creeaza fisier json

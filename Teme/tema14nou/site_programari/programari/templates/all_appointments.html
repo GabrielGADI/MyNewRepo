@@ -6,6 +6,11 @@
 </head>
 <body>
 {% if appointment %}
+<h2>
+    All Appointments
+
+</h2>
+<div class ="all_appointments-list">
     <ul>
         {% for appointment in appointments %}
         <li>
@@ -13,6 +18,8 @@
         </li>
         {% endfor %}
     </ul>
+    </div>
+{% include "form.html" %}
 {% endif %}
 </body>
 </html>

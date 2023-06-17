@@ -67,23 +67,22 @@ print(numbers.count(3))
 
 print(20 * " - ", "add 2 lists", 20 * " - ")
 numbers1 = [1, 3, 6, 7, 8]
-print(numbers + numbers1) # creeaza o lista noua
-numbers.extend(numbers1) # modifica lista initiala
+print(numbers + numbers1)  # creeaza o lista noua
+numbers.extend(numbers1)  # modifica lista initiala
 print(numbers)
 
 # reverse (inverseaza ordinea)
 
 print(20 * " - ", "reverse", 20 * " - ")
-print(fruits[::-1]) # nu modifica list initiala
+print(fruits[::-1])  # nu modifica list initiala
 print(fruits)
-fruits.reverse() # inplace(pe loc) modifica lista initiala
+fruits.reverse()  # inplace(pe loc) modifica lista initiala
 print(fruits)
 
 # sort
 
 print(20 * " - ", "sort", 20 * " - ")
-numbers.sort() # modifica lista initiala inplace
+numbers.sort()  # modifica lista initiala inplace
 print(numbers)
 numbers.sort(reverse=True)
 print(numbers)
-

@@ -3,6 +3,7 @@ class Dog:
     age = 12
     name = "Rexy"
 
+
 d = Dog()
 print(type(d))
 print(d.species)

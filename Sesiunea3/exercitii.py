@@ -15,12 +15,12 @@ set2 = {"Orange", "Blue", "Pink"}
 
 # a.
 print(set1.differenece(set2))
-print(set1-set2)
+print(set1 - set2)
 
 # b.
 print(set1.intersection(set2))
-print(set1&set2)
+print(set1 & set2)
 
 # c.
 print(set1.symmetric_difference(set2))
-print(set1^set2)
+print(set1 ^ set2)

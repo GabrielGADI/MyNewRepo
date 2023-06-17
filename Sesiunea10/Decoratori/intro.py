@@ -10,6 +10,7 @@ def say_hi(name):
 def greet_Bob(func):
     return func("Bob")
 
+
 # transmitere functie ca si parametru
 print(greet_Bob(say_hi))
 print(greet_Bob(say_hello))
@@ -48,8 +49,8 @@ def parent(m):
         return second_child
 
 
-f = parent(1) # va returna "First child"
+f = parent(1)  # va returna "First child"
 print(type(f))
 print(f())
-f  = parent(2) # va returna "Second Child"
+f = parent(2)  # va returna "Second Child"
 print(f())
